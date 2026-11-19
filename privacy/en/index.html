@@ -15,7 +15,7 @@
 
 <main><div class="wrap">
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 18 November 2026 · Translation: the Italian version prevails.</p>
+<p class="updated">Last updated: [PUBLICATION DATE] · Translation: the Italian version prevails.</p>
 
 <p class="lead">This page explains what data the Tutora app processes, why, for how long and with which services. It applies to users in Italy, the European Union, Switzerland and San Marino.</p>
 
@@ -25,7 +25,7 @@
   <li>We do not ask for your name, email or phone number. The app creates an anonymous account on its own, identified only by a code.</li>
   <li>Your pet's profile stays on your phone.</li>
   <li>Label photos are used to read the label. Before we store them, we remove the location and the other hidden data in the photo. We delete them 30 days after the reading.</li>
-  <li>We do not sell your data. We show no ads. We do not track you across other companies' apps and websites.</li>
+  <li>We do not sell your data and we show no ads in the app. Only if you tap “Allow” on the iOS tracking request do we use Meta to measure our ads on Facebook and Instagram, and PostHog may record some app sessions, always with text, photos and the camera covered (section 2).</li>
 </ul>
 </div>
 
@@ -57,6 +57,21 @@
 
 <h3>Technical data</h3>
 <p>Like any online service, the servers log the IP address, the date and time of requests and the type of app. We use them only for security, to block abuse and to fix errors, and we delete them within 30 days.</p>
+
+<h3>Session recording (only with your consent)</h3>
+<p>If you tap “Allow” on the iOS tracking request, PostHog (servers in the European Union) may record a random share of your app sessions: a sequence of images of the screens and of your taps. We use it to see where the app is hard to use and to fix bugs.</p>
+<p>All text fields are always covered in the recording, including your pet's name, your email and your searches. Your pet's photos, label photos and the camera image are covered too. We do not record network traffic or the app's technical logs.</p>
+<p>Recordings are linked to the code of your anonymous account. They are kept on PostHog's EU servers for [RETENTION PERIOD OF RECORDINGS IN THE POSTHOG PROJECT], then deleted.</p>
+<p>If you tap “Ask App Not to Track”, no session is recorded. You can change your mind at any time in iOS Settings &gt; Privacy &amp; Security &gt; Tracking &gt; Tutora.</p>
+
+<h3>Ad measurement (Meta)</h3>
+<p>We promote Tutora with ads on Facebook and Instagram, services of Meta Platforms Ireland Ltd. To know which ads lead people to install the app and subscribe, we use the Meta SDK. The app sends nothing to Meta before you answer the iOS tracking request.</p>
+<ul>
+  <li><strong>If you tap “Allow”</strong>, the app sends Meta the install, app opens and the end of the initial setup. With them it sends the phone's advertising identifier (IDFA) and an anonymous code created by Meta. RevenueCat also sends Meta, from its server, the subscription events: trial start, purchase and renewals, with plan type, price and currency. It sends them with the IDFA, Meta's anonymous code and the phone's IP address.</li>
+  <li><strong>If you tap “Ask App Not to Track”</strong>, the app does not use the IDFA and RevenueCat does not send your purchases to Meta. [IF META_WHEN_NOT_AUTHORIZED = 'limited':] The app sends Meta only the install, app opens and the end of the setup, without the IDFA and with advertiser tracking off. Meta uses them only in aggregate to measure campaigns. [IF 'off': The app sends nothing to Meta.]</li>
+</ul>
+<p>We never send Meta your pet's name, photos, scans, text you write or your email. You can change your mind at any time in iOS Settings &gt; Privacy &amp; Security &gt; Tracking &gt; Tutora. From then on the app stops using the IDFA.</p>
+<p>[TO CHECK WITH THE LAWYER: Meta's role (independent or joint controller for collecting and sending the SDK data) and the link to its policy: https://www.facebook.com/privacy/policy/]</p>
 
 <h3>Summary table</h3>
 <div class="table-wrap"><table>
@@ -117,7 +132,9 @@ and recall preferences
 <tbody>
 <tr><td>Supabase</td><td>Server, database, photo storage</td><td>Database in the EU (Frankfurt, Germany); some support services in the United States</td><td>European Commission Standard Contractual Clauses</td></tr>
 <tr><td>Google (Gemini API, paid service)</td><td>Reading label photos and texts</td><td>Google infrastructure, including the United States</td><td>EU-US Data Privacy Framework and Standard Contractual Clauses</td></tr>
-<tr><td>RevenueCat</td><td>Purchase verification</td><td>United States</td><td>Standard Contractual Clauses</td></tr>
+<tr><td>RevenueCat</td><td>Purchase verification; with your tracking consent, sending trial, purchase and renewal events to Meta</td><td>United States</td><td>Standard Contractual Clauses</td></tr>
+<tr><td>PostHog</td><td>App usage statistics; with your tracking consent, session recording</td><td>EU servers (Frankfurt, Germany); company based in the United States</td><td>Standard Contractual Clauses for any access from the United States</td></tr>
+<tr><td>Meta Platforms Ireland Ltd</td><td>Measuring our ads on Facebook and Instagram, only after you answer the iOS tracking request</td><td>Ireland (EU); the Meta group is based in the United States</td><td>EU-US Data Privacy Framework and Standard Contractual Clauses [TO CHECK]</td></tr>
 <tr><td>Expo</td><td>Sending push notifications</td><td>United States</td><td>EU-US Data Privacy Framework</td></tr>
 </tbody>
 </table></div>
@@ -129,9 +146,9 @@ and recall preferences
 <h2>8. What we do not do</h2>
 <ul>
   <li>We do not sell or rent your data.</li>
-  <li>We show no ads and use no advertising tools.</li>
-  <li>We do not track you across other companies' apps and websites and we do not use the phone's advertising identifier.</li>
-  <li>We use no third-party analytics or crash reporting services.</li>
+  <li>We show no ads in the app.</li>
+  <li>Without your “Allow” on the iOS tracking request, we do not track you across other companies' apps and websites and we do not use the phone's advertising identifier.</li>
+  <li>We record the screen only if you allow tracking, for a share of sessions, with all text fields, photos and the camera covered (section 2, “Session recording”). We never record what you type. We use no crash reporting services. For usage statistics we use only PostHog.</li>
   <li>We do not ask for your location or your contacts.</li>
   <li>We make no automated decisions with legal effects on you. The score is about the product, not the person.</li>
 </ul>
