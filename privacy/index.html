@@ -24,8 +24,8 @@
 <p><strong>In breve</strong></p>
 <ul>
   <li>Non ti chiediamo nome, email o telefono. L'app crea da sola un account anonimo, identificato solo da un codice.</li>
-  <li>Il profilo del tuo animale resta sul tuo telefono. Al server arriva solo il suo nome, quando rispondi alla domanda su consigli e offerte, per scriverlo nel titolo della notifica (sezione 5).</li>
-  <li>Usiamo PostHog, con server nell'UE, per statistiche d'uso pseudonime: quali schermate apri, scansioni, acquisti. Solo se acconsenti al tracciamento, PostHog può registrare alcune sessioni d'uso dell'app, sempre con testi, foto e fotocamera coperti.</li>
+  <li>Il profilo del tuo animale resta sul tuo telefono. A PostHog, per le statistiche, arrivano alcune sue caratteristiche (specie, razza, età, peso, sensibilità alimentari, cosa mangia oggi), mai il nome o la foto. Il nome arriva al nostro server solo quando rispondi alla domanda su consigli e offerte, per scriverlo nel titolo della notifica (sezione 5).</li>
+  <li>Usiamo PostHog, con server nell'UE, per statistiche d'uso pseudonime: quali schermate apri, quali prodotti scansioni e cerchi, acquisti. Questi dati restano a noi e non vanno a Meta. Solo se acconsenti al tracciamento, PostHog può registrare alcune sessioni d'uso dell'app, sempre con testi, foto e fotocamera coperti.</li>
   <li>Le foto delle etichette servono a leggere l'etichetta. Prima di salvarle togliamo la posizione e gli altri dati nascosti nella foto. Le cancelliamo 30 giorni dopo la lettura.</li>
   <li>Non vendiamo i tuoi dati e non mostriamo pubblicità nell'app. Solo se rispondi «Consenti» alla richiesta di iOS sul tracciamento usiamo Meta per misurare le nostre pubblicità su Facebook e Instagram (sezione 2).</li>
 </ul>
@@ -58,22 +58,28 @@
 <p>Se accetti di ricevere consigli, novità e offerte, salviamo la tua risposta, la data, il testo che ti abbiamo mostrato e la sua versione, e da dove hai risposto (configurazione iniziale o Profilo). Teniamo anche lo storico delle risposte, come prova del consenso. Insieme alla risposta salviamo il nome del tuo animale come lo mostra l'app (oppure "il tuo cane", "il tuo gatto", "i tuoi animali"), per usarlo nel titolo delle notifiche. Leggi la sezione 5.</p>
 
 <h3>Statistiche d'uso</h3>
-<p>Per capire come viene usata l'app e migliorarla usiamo PostHog, con server nell'Unione europea. L'app invia eventi d'uso: quali schermate apri, le scansioni e i loro risultati, le ricerche (solo la lunghezza del testo, non il testo), i passi dell'abbonamento e gli acquisti, le notifiche accese o spente. Ogni evento ha la versione dell'app, il sistema (iOS e versione), la lingua e il codice del tuo account anonimo. Non inviamo il nome dell'animale, testi scritti da te, email o la posizione. PostHog non usa l'identificativo pubblicitario. L'indirizzo IP non viene conservato. PostHog registra lo schermo solo nel caso descritto qui sotto.</p>
+<p>Per capire come viene usata l'app e migliorarla usiamo PostHog, con server nell'Unione europea. L'app invia eventi d'uso, collegati al codice del tuo account anonimo:</p>
+<ul>
+  <li><strong>uso dell'app</strong>: quali schermate e schede apri, quali sezioni apri (per esempio «Perché è buono» o «Cosa c'è dentro»), le notifiche che tocchi, i passi dell'abbonamento e gli acquisti, le notifiche accese o spente;</li>
+  <li><strong>prodotti scansionati e cercati</strong>: codice a barre, marca, nome del prodotto e voto come sono nel nostro catalogo, i prodotti che salvi, condividi o togli dalla cronologia, i risultati e le classifiche che apri. Delle ricerche inviamo la lunghezza del testo e il numero di risultati; il testo cercato solo quando è esattamente la marca o il nome di un prodotto del catalogo;</li>
+  <li><strong>dati dell'animale</strong>: specie, razza (se scelta dall'elenco), sesso, sterilizzazione, età in mesi e fascia d'età, peso e fascia di peso, taglia, attività, sensibilità alimentari, tipo di cibo (secco, umido, misto), quanti animali hai e i prodotti che mangia oggi (marca, codice, voto); le risposte a scelta della configurazione iniziale.</li>
+</ul>
+<p>Ogni evento ha anche la versione dell'app, il sistema (iOS e versione) e la lingua. Non inviamo il nome dell'animale, le sue foto, testi scritti da te, email o la posizione. <strong>Questi dati vanno solo a PostHog, per le nostre analisi interne: non li inviamo a Meta né ad altri.</strong> PostHog non usa l'identificativo pubblicitario. L'indirizzo IP non viene conservato. PostHog registra lo schermo solo nel caso descritto qui sotto.</p>
 
 <h3>Registrazione delle sessioni (solo con il tuo consenso)</h3>
 <p>Se rispondi «Consenti» alla richiesta di iOS sul tracciamento, PostHog può registrare una parte delle sessioni d'uso dell'app, scelte a caso. La registrazione è una sequenza di immagini delle schermate e dei tocchi. Ci serve a capire dove l'app è difficile da usare e a correggere gli errori.</p>
-<p>Nella registrazione sono sempre coperti tutti i campi di testo, compresi il nome dell'animale, l'email e la ricerca. Sono coperte anche le foto del tuo animale, le foto delle etichette e l'immagine della fotocamera. Non registriamo il traffico di rete né i messaggi tecnici dell'app.</p>
+<p>Nella registrazione sono sempre coperti tutti i testi dello schermo e tutti i campi di testo, compresi il nome dell'animale e la ricerca. Sono coperte anche tutte le immagini (le foto del tuo animale, le foto delle etichette, le immagini dei prodotti) e l'immagine della fotocamera. Non registriamo il traffico di rete né i messaggi tecnici dell'app.</p>
 <p>Le registrazioni sono collegate al codice del tuo account anonimo. Restano sui server di PostHog nell'Unione europea per [PERIODO DI CONSERVAZIONE DELLE REGISTRAZIONI NEL PROGETTO POSTHOG], poi vengono cancellate.</p>
 <p>Se non dai il consenso, nessuna sessione viene registrata. Puoi cambiare idea in qualsiasi momento in Impostazioni di iOS &gt; Privacy e sicurezza &gt; Tracciamento &gt; Tutora.</p>
 
 <h3>Misurazione delle pubblicità (Meta)</h3>
-<p>Promuoviamo Tutora con pubblicità su Facebook e Instagram, servizi di Meta Platforms Ireland Ltd. Per sapere quali pubblicità portano a installare l'app e ad abbonarsi usiamo l'SDK di Meta. Prima della tua risposta alla richiesta di iOS sul tracciamento l'app non invia a Meta né eventi né l'identificativo pubblicitario.</p>
+<p>Promuoviamo Tutora con pubblicità su Facebook e Instagram, servizi di Meta Platforms Ireland Ltd. Per sapere quali pubblicità portano a installare l'app e ad abbonarsi usiamo l'SDK di Meta. L'SDK di Meta parte solo dopo che hai risposto «Consenti» alla richiesta di iOS sul tracciamento: prima della risposta l'app non si collega a Meta.</p>
 <ul>
   <li><strong>Se rispondi «Consenti»</strong>, l'app invia a Meta l'installazione, le aperture dell'app e la fine della configurazione iniziale. Insieme invia l'identificativo pubblicitario del telefono (IDFA) e un codice anonimo creato da Meta. Inoltre RevenueCat invia a Meta, dal suo server, gli eventi dell'abbonamento: inizio della prova, acquisto e rinnovi, con tipo di piano, prezzo e valuta. Li invia con l'IDFA, il codice anonimo di Meta e l'indirizzo IP del telefono.</li>
-  <li><strong>Se non dai il consenso</strong>, l'app non usa l'IDFA e RevenueCat non invia a Meta i tuoi acquisti. [SE META_WHEN_NOT_AUTHORIZED = 'limited':] L'app invia a Meta solo l'installazione, le aperture e la fine della configurazione, senza IDFA e con il tracciamento pubblicitario spento. Meta li usa in forma aggregata per misurare le campagne. [SE = 'off': L'app non invia nulla a Meta.]</li>
+  <li><strong>Se non dai il consenso</strong>, a Meta non arriva niente: l'SDK di Meta non parte, l'app non invia eventi né l'installazione e non usa l'IDFA, e RevenueCat non invia a Meta i tuoi eventi dell'abbonamento.</li>
 </ul>
-<p>Non inviamo a Meta il nome dell'animale, le foto, le scansioni, testi scritti da te o la tua email. Puoi cambiare idea in qualsiasi momento in Impostazioni di iOS &gt; Privacy e sicurezza &gt; Tracciamento &gt; Tutora. Da quel momento l'app smette di usare l'IDFA.</p>
-<p>[DA VERIFICARE CON IL LEGALE: ruolo di Meta (titolare autonomo o contitolare per la raccolta e la trasmissione dei dati dell'SDK) e rimando alla sua informativa: https://www.facebook.com/privacy/policy/]</p>
+<p>Non inviamo a Meta il nome o le caratteristiche dell'animale, le foto, le scansioni, le ricerche, le schermate che apri, testi scritti da te o la tua email. Puoi cambiare idea in qualsiasi momento in Impostazioni di iOS &gt; Privacy e sicurezza &gt; Tracciamento &gt; Tutora. Da quel momento l'app smette di usare l'IDFA e, all'avvio successivo, non avvia più l'SDK di Meta.</p>
+<p>Ruolo di Meta e garanzie: vedi la sezione 7.</p>
 
 <h3>Abbonamento</h3>
 <p>Se acquisti Premium, il pagamento lo gestisce Apple. Noi riceviamo da RevenueCat, il servizio che verifica gli acquisti, solo il tipo di abbonamento, se è attivo e la scadenza, collegati al codice del tuo account. Non vediamo mai i tuoi dati di pagamento né il tuo Apple ID.</p>
@@ -97,16 +103,16 @@ e preferenze dei richiami
 <tr><td>Risposta su consigli e offerte, nome dell'animale per il titolo</td><td>Notifiche di consigli, novità e offerte</td><td>Consenso (lett. a)</td><td>Finché non cancelli l'account</td></tr>
 <tr><td>Prova del consenso (data, testo mostrato, versione, risposte precedenti)</td><td>Dimostrare che ci hai dato il consenso, o che lo hai tolto</td><td>Obbligo di dimostrare il consenso (art. 7.1) e legittimo interesse (lett. f)</td><td>Finché non cancelli l'account</td></tr>
 <tr><td>Notifiche di offerta inviate (data, testo)</td><td>Non mandarti due volte la stessa offerta</td><td>Consenso (lett. a)</td><td>Finché non cancelli l'account</td></tr>
-<tr><td>Statistiche d'uso (PostHog)</td><td>Capire come si usa l'app e migliorarla</td><td>Legittimo interesse (lett. f)</td><td>12 mesi, poi cancellate</td></tr>
+<tr><td>Statistiche d'uso (PostHog): uso dell'app, prodotti scansionati e cercati, dati dell'animale senza nome né foto. Mai a Meta</td><td>Capire come si usa l'app e migliorarla</td><td>Legittimo interesse (lett. f)</td><td>12 mesi, poi cancellate</td></tr>
 <tr><td>Registrazioni delle sessioni (PostHog), con testi, foto e fotocamera coperti</td><td>Capire dove l'app è difficile da usare, correggere gli errori</td><td>Consenso (lett. a), dato con la richiesta di iOS sul tracciamento</td><td>[PERIODO DI CONSERVAZIONE DELLE REGISTRAZIONI], poi cancellate</td></tr>
-<tr><td>Eventi per Meta (installazione, aperture, fine configurazione; da RevenueCat: prova, acquisto, rinnovi), IDFA, codice anonimo di Meta</td><td>Misurare le nostre pubblicità su Facebook e Instagram</td><td>Consenso (lett. a), dato con la richiesta di iOS sul tracciamento</td><td>Secondo i tempi di Meta [DA VERIFICARE]</td></tr>
+<tr><td>Solo con «Consenti»: eventi per Meta (installazione, aperture, fine configurazione; da RevenueCat: prova, acquisto, rinnovi), IDFA, codice anonimo di Meta. Senza consenso niente a Meta</td><td>Misurare le nostre pubblicità su Facebook e Instagram</td><td>Consenso (lett. a), dato con la richiesta di iOS sul tracciamento</td><td>Secondo i tempi di Meta [DA VERIFICARE]</td></tr>
 <tr><td>Stato dell'abbonamento</td><td>Premium</td><td>Esecuzione del contratto (lett. b)</td><td>Finché non cancelli l'account</td></tr>
 <tr><td>IP e dati tecnici delle richieste</td><td>Sicurezza, abusi, errori</td><td>Legittimo interesse (lett. f)</td><td>30 giorni</td></tr>
 </tbody>
 </table></div>
 
 <h2>3. Dati che restano sul tuo telefono</h2>
-<p>Queste informazioni stanno solo nella memoria del telefono e non arrivano a noi (unica eccezione: il nome dell'animale per le notifiche di consigli e offerte, vedi la sezione 2):</p>
+<p>Queste informazioni stanno nella memoria del telefono. Non arrivano al nostro server, con due eccezioni: il nome dell'animale per le notifiche di consigli e offerte, e le caratteristiche dell'animale e i prodotti che mangia, senza nome né foto, che vanno a PostHog per le statistiche (sezione 2, «Statistiche d'uso»):</p>
 <ul>
   <li>il profilo del tuo animale: nome, specie, sesso, età, razza, peso, attività, sterilizzazione, sensibilità alimentari, problemi di salute, foto;</li>
   <li>i prodotti che mangia oggi;</li>
@@ -157,7 +163,7 @@ e preferenze dei richiami
 </table></div>
 <p>Apple tratta i dati come titolare autonomo per l'App Store e i pagamenti.</p>
 <p>Apple è titolare autonomo anche per il servizio di notifiche push.</p>
-<p>Meta Platforms Ireland Ltd riceve i dati per la misurazione delle pubblicità (sezione 2, «Misurazione delle pubblicità») come [TITOLARE AUTONOMO / CONTITOLARE: DA VERIFICARE CON IL LEGALE], secondo la sua informativa (https://www.facebook.com/privacy/policy/). Il gruppo Meta ha sede negli Stati Uniti: [GARANZIE PER IL TRASFERIMENTO DA VERIFICARE, per esempio EU-US Data Privacy Framework].</p>
+<p><strong>Meta.</strong> Meta Platforms Ireland Ltd (Merrion Road, Dublino 4, Irlanda) riceve, solo con il tuo «Consenti», i dati per la misurazione delle pubblicità (sezione 2, «Misurazione delle pubblicità»). Meta non è un nostro fornitore (responsabile del trattamento): secondo le Condizioni degli Strumenti di Meta per le aziende, per la raccolta e la trasmissione di questi dati dall'app a Meta siamo contitolari insieme a Meta Platforms Ireland, secondo l'«Addendum per i titolari» di Meta, che indica Meta come punto di contatto per l'esercizio dei tuoi diritti su quei dati; per quello che Meta fa dopo con i dati ricevuti, Meta è titolare autonomo, secondo la sua informativa (<a href="https://www.facebook.com/privacy/policy/" rel="noopener">https://www.facebook.com/privacy/policy/</a>). Meta può trasferire i dati a Meta Platforms, Inc. negli Stati Uniti, che aderisce all'EU-US Data Privacy Framework; per gli altri trasferimenti Meta usa le clausole contrattuali tipo della Commissione europea. [DA VERIFICARE CON IL LEGALE prima della pubblicazione: ruolo di contitolare e testo dell'Addendum in vigore, adesione attuale di Meta Platforms, Inc. al Data Privacy Framework.]</p>
 <p><strong>Immagini dei prodotti di negozi terzi.</strong> Alcune foto dei prodotti vengono caricate direttamente dai server di Shopify (cdn.shopify.com), il servizio usato dal negozio online da cui provengono le immagini. Quando l'app mostra una di queste foto, il tuo dispositivo si collega a quei server, che ricevono il tuo indirizzo IP e alcune informazioni tecniche (per esempio il tipo di dispositivo e di sistema operativo). Non inviamo a Shopify altri dati che ti riguardano. Shopify può trattare questi dati anche fuori dall'Unione Europea, con le garanzie previste dal GDPR. La sua informativa è disponibile su <a href="https://www.shopify.com/legal/privacy" rel="noopener">https://www.shopify.com/legal/privacy</a>.</p>
 <p>Puoi chiederci una copia delle garanzie scrivendo a <a href="mailto:support.tutora@gmail.com">support.tutora@gmail.com</a>.</p>
 
@@ -166,7 +172,8 @@ e preferenze dei richiami
   <li>Non vendiamo e non affittiamo i tuoi dati.</li>
   <li>Non mostriamo pubblicità nell'app.</li>
   <li>Senza il tuo «Consenti» alla richiesta di iOS sul tracciamento non ti tracciamo tra app e siti di altre aziende e non usiamo l'identificativo pubblicitario del telefono.</li>
-  <li>Registriamo lo schermo solo se acconsenti al tracciamento, per una parte delle sessioni, con tutti i campi di testo, le foto e la fotocamera coperti (sezione 2, «Registrazione delle sessioni»). Non registriamo mai quello che scrivi. Non usiamo servizi per i rapporti sugli arresti anomali. Per le statistiche d'uso usiamo solo PostHog (sezione 2).</li>
+  <li>Non inviamo a Meta i dati dell'animale, i prodotti che scansioni o cerchi, né come usi l'app: questi dati vanno solo a PostHog per le nostre analisi.</li>
+  <li>Registriamo lo schermo solo se acconsenti al tracciamento, per una parte delle sessioni, con tutti i testi, le immagini e la fotocamera coperti (sezione 2, «Registrazione delle sessioni»). Non registriamo mai quello che scrivi. Non usiamo servizi per i rapporti sugli arresti anomali. Per le statistiche d'uso usiamo solo PostHog (sezione 2).</li>
   <li>Non chiediamo la tua posizione né i tuoi contatti.</li>
   <li>Non prendiamo decisioni automatiche che abbiano effetti giuridici su di te. Il voto riguarda il prodotto, non la persona.</li>
 </ul>
