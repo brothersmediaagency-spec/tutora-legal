@@ -62,16 +62,16 @@
 <p>If you tap “Allow” on the iOS tracking request, PostHog (servers in the European Union) may record a random share of your app sessions: a sequence of images of the screens and of your taps. We use it to see where the app is hard to use and to fix bugs.</p>
 <p>All text fields are always covered in the recording, including your pet's name, your email and your searches. Your pet's photos, label photos and the camera image are covered too. We do not record network traffic or the app's technical logs.</p>
 <p>Recordings are linked to the code of your anonymous account. They are kept on PostHog's EU servers for [RETENTION PERIOD OF RECORDINGS IN THE POSTHOG PROJECT], then deleted.</p>
-<p>If you tap “Ask App Not to Track”, no session is recorded. You can change your mind at any time in iOS Settings &gt; Privacy &amp; Security &gt; Tracking &gt; Tutora.</p>
+<p>If you do not give consent, no session is recorded. You can change your mind at any time in iOS Settings &gt; Privacy &amp; Security &gt; Tracking &gt; Tutora.</p>
 
 <h3>Ad measurement (Meta)</h3>
-<p>We promote Tutora with ads on Facebook and Instagram, services of Meta Platforms Ireland Ltd. To know which ads lead people to install the app and subscribe, we use the Meta SDK. The app sends nothing to Meta before you answer the iOS tracking request.</p>
+<p>We promote Tutora with ads on Facebook and Instagram, services of Meta Platforms Ireland Ltd. To know which ads lead people to install the app and subscribe, we use the Meta SDK. Before you answer the iOS tracking request, the app sends Meta no events and no advertising identifier.</p>
 <ul>
   <li><strong>If you tap “Allow”</strong>, the app sends Meta the install, app opens and the end of the initial setup. With them it sends the phone's advertising identifier (IDFA) and an anonymous code created by Meta. RevenueCat also sends Meta, from its server, the subscription events: trial start, purchase and renewals, with plan type, price and currency. It sends them with the IDFA, Meta's anonymous code and the phone's IP address.</li>
-  <li><strong>If you tap “Ask App Not to Track”</strong>, the app does not use the IDFA and RevenueCat does not send your purchases to Meta. [IF META_WHEN_NOT_AUTHORIZED = 'limited':] The app sends Meta only the install, app opens and the end of the setup, without the IDFA and with advertiser tracking off. Meta uses them only in aggregate to measure campaigns. [IF 'off': The app sends nothing to Meta.]</li>
+  <li><strong>If you do not give consent</strong>, the app does not use the IDFA and RevenueCat does not send your purchases to Meta. [IF META_WHEN_NOT_AUTHORIZED = 'limited':] The app sends Meta only the install, app opens and the end of the setup, without the IDFA and with advertiser tracking off. Meta uses them only in aggregate to measure campaigns. [IF 'off': The app sends nothing to Meta.]</li>
 </ul>
 <p>We never send Meta your pet's name, photos, scans, text you write or your email. You can change your mind at any time in iOS Settings &gt; Privacy &amp; Security &gt; Tracking &gt; Tutora. From then on the app stops using the IDFA.</p>
-<p>[TO CHECK WITH THE LAWYER: Meta's role (independent or joint controller for collecting and sending the SDK data) and the link to its policy: https://www.facebook.com/privacy/policy/]</p>
+<p>Meta Platforms Ireland Ltd receives this data as [INDEPENDENT / JOINT CONTROLLER: TO CHECK WITH THE LAWYER], under its own policy (https://www.facebook.com/privacy/policy/). The Meta group is based in the United States: [TRANSFER SAFEGUARDS TO CHECK, e.g. EU-US Data Privacy Framework].</p>
 
 <h3>Summary table</h3>
 <div class="table-wrap"><table>
@@ -134,7 +134,6 @@ and recall preferences
 <tr><td>Google (Gemini API, paid service)</td><td>Reading label photos and texts</td><td>Google infrastructure, including the United States</td><td>EU-US Data Privacy Framework and Standard Contractual Clauses</td></tr>
 <tr><td>RevenueCat</td><td>Purchase verification; with your tracking consent, sending trial, purchase and renewal events to Meta</td><td>United States</td><td>Standard Contractual Clauses</td></tr>
 <tr><td>PostHog</td><td>App usage statistics; with your tracking consent, session recording</td><td>EU servers (Frankfurt, Germany); company based in the United States</td><td>Standard Contractual Clauses for any access from the United States</td></tr>
-<tr><td>Meta Platforms Ireland Ltd</td><td>Measuring our ads on Facebook and Instagram, only after you answer the iOS tracking request</td><td>Ireland (EU); the Meta group is based in the United States</td><td>EU-US Data Privacy Framework and Standard Contractual Clauses [TO CHECK]</td></tr>
 <tr><td>Expo</td><td>Sending push notifications</td><td>United States</td><td>EU-US Data Privacy Framework</td></tr>
 </tbody>
 </table></div>
